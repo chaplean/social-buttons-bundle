@@ -1,6 +1,8 @@
 Getting Started
 ===============
 
+## Configuration: 
+
 ```yaml
 chaplean_social_buttons:
     buttons:
@@ -23,4 +25,23 @@ chaplean_social_buttons:
             locale:         "fr_FR"
         pinterest:
             url:            null
+```
+
+## Include styles:
+
+Files to include in layout
+
+Require:
+```html
+    'bundles/chapleansocialbuttons/libs/bootstrap-social/bootstrap-social.css'
+```
+
+If bootstrap not included:
+```html
+    'bundles/chapleansocialbuttons/libs/bootstrap/dist/css/bootstrap.min.css' 
+```
+
+If not font-awesome is include:
+```html
+    'bundles/chapleansocialbuttons/libs/font-awesome/css/font-awesome.min.css'
 ```

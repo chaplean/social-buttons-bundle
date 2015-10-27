@@ -9,9 +9,9 @@ Fork me
 
 Installation step process:
 
-1. Replace `BundleName` by name of bundle + files:
-    * ChapleanBundleNameBundle.php
-    * DependencyInjection/ChapleanBundleNameExtension.php
+1. Replace `SocialButtons` by name of bundle + files:
+    * ChapleanSocialButtonsBundle.php
+    * DependencyInjection/ChapleanSocialButtonsExtension.php
 2. Remove index.feature if is useless
 
 # Scrutinizer

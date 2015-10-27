@@ -33,11 +33,11 @@
     },
     "autoload": {
         "psr-0": {
-            "Chaplean\\Bundle\\BundleNameBundle": "",
+            "Chaplean\\Bundle\\SocialButtonsBundle": "",
             "SymfonyStandard": "app/"
         }
     },
-    "target-dir" : "Chaplean/Bundle/BundleNameBundle",
+    "target-dir" : "Chaplean/Bundle/SocialButtonsBundle",
     "config": {
         "bin-dir": "bin",
         "discard-changes": true

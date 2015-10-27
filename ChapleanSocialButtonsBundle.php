@@ -1,17 +1,17 @@
 <?php
 
-namespace Chaplean\Bundle\BundleNameBundle;
+namespace Chaplean\Bundle\SocialButtonsBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class ChapleanBundleNameBundle.
+ * Class ChapleanSocialButtonsBundle.
  *
- * @package   Chaplean\Bundle\BundleNameBundle
+ * @package   Chaplean\Bundle\SocialButtonsBundle
  * @author    Valentin - Chaplean <valentin@chaplean.com>²
  * @copyright 2014 - 2015 Chaplean (http://www.chaplean.com)
  * @since     1.0.0
  */
-class ChapleanBundleNameBundle extends Bundle
+class ChapleanSocialButtonsBundle extends Bundle
 {
 }

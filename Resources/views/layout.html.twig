@@ -1,10 +1,33 @@
 <!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-Title
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        {% stylesheets
+        'vendor/font-awesome/css/font-awesome.min.css'
+        'vendor/bootstrap-social/bootstrap-social.css'
+        'vendor/bootstrap/dist/css/bootstrap.min.css' %}
+        <link href="{{ asset_url }}" rel="stylesheet" type="text/css" />
+        {% endstylesheets %}
+
+        {% stylesheets
+        '@ChapleanSocialButtonsBundle/Resources/public/sass/*' filter='compass' %}
+        <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+        {% endstylesheets %}
+    </head>
+
+    <body>
+    {% block content %}
+
+        {{ twitterButton() }}
+
+        {{ facebookButton() }}
+
+        {{ googlePlusButton() }}
+
+        {{ linkedInButton() }}
+
+        {{ pinterestButton() }}
+    {% endblock %}
+    </body>
 </html>

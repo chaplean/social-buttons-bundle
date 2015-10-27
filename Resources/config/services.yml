@@ -1,1 +1,12 @@
-#services:
+services:
+    chaplean_social_buttons.social_bar_helper:
+        class : Chaplean\Bundle\SocialButtonsBundle\Helpers\SocialBarHelper
+        tags :
+            - {name : 'templating.helper', alias : 'social-buttons'}
+        arguments : [ @templating ]
+
+    chaplean_social_buttons.social_bar_twig_extension:
+        class: Chaplean\Bundle\SocialButtonsBundle\Twig\Extensions\ChapleanTwigSocialBar
+        tags:
+            - { name: 'twig.extension' }
+        arguments : [ @service_container ]

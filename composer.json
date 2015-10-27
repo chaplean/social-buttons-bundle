@@ -1,6 +1,6 @@
 {
-    "name": "chaplean/bundle",
-    "description": "The Bundle base to fork",
+    "name": "chaplean/social-buttons-bundle",
+    "description": "Template for social buttons",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [

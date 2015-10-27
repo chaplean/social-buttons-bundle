@@ -1,0 +1,32 @@
+{% if (url is not defined or url == null) and app.request.uri is defined %}
+    {% set url = app.request.uri %}
+{% elseif url is empty %}
+    {% set url = '' %}
+{% endif %}
+{% set params = '?url=' ~ url ~ '&text=' ~ message ~ '&lang=' ~ locale ~ '&count=' ~ count %}
+
+{% if via is not sameas(false) %}
+    {% set params = params ~ '&via=' ~ via %}
+{% endif %}
+
+{% if tag is not sameas(false) %}
+    {% set params = params ~ '&hashtags=' ~ tag %}
+{% endif %}
+
+{% spaceless %}
+<a class="btn btn-social-icon btn-twitter" href="https://twitter.com/intent/tweet{{ params }}">
+    <i class="fa fa-twitter"></i>{{ text }}
+</a>
+<script>
+    !function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+</script>
+
+{% endspaceless %}

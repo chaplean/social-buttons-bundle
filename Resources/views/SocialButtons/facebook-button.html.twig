@@ -1,0 +1,28 @@
+{% if (url is not defined or url == null) and app.request.uri is defined %}
+    {% set url = app.request.uri %}
+{% elseif url is empty %}
+    {% set url = '' %}
+{% endif %}
+{% set params = '?url=' ~ url ~ '&locale=' ~ locale ~ '&send=' ~ send ~ '&showFaces=' ~ showFaces %}
+
+{% spaceless %}
+    <a class="btn btn-social-icon btn-facebook" onclick="facebook()" href="javascript:void(0)">
+        <i class="fa fa-facebook"></i>
+        <div id="fb-root"></div>
+    </a>
+{#<div class="fb-share-button" data-href="{{ url }}" data-layout="{{ layout }}" data-send="{{send}}" data-width="{{width}}" data-show-faces="{{showFaces}}" data-share="{{share}}">#}
+{#</div>#}
+<script>
+function facebook() {
+    var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+    var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+    var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+    var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+    var left = ((width / 2) - (580 / 2)) + dualScreenLeft;
+    var top = ((height / 2) - (325 / 2)) + dualScreenTop;
+
+    window.open('http://www.facebook.com/sharer.php{{ params }}','sharer','toolbar=0,status=0,width=580,height=325,top=' + top + ',left=' + left);
+}
+</script>
+{% endspaceless %}

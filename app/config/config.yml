@@ -72,3 +72,27 @@ doctrine:
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
         auto_mapping: true
+
+chaplean_social_buttons:
+    buttons:
+        facebook:
+            url:            null
+            locale:         "fr_FR"
+            send:           false
+            showFaces:      false
+        twitter:
+            url:            null
+            locale:         "fr"
+            message:        ""
+            text:           ""
+            via:            false
+            tag:            false
+            count:          none
+        googleplus:
+            url:            null
+            locale :        "fr"
+        linkedin:
+            url:            null
+            locale:         "fr_FR"
+        pinterest:
+            url:            null

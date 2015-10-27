@@ -1,0 +1,14 @@
+{% if (url is not defined or url == null) and app.request.uri is defined %}
+    {% set url = app.request.uri %}
+{% elseif url is empty %}
+    {% set url = '' %}
+{% endif %}
+
+{% spaceless %}
+
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+  lang: {{ locale }}
+</script>
+
+ <script type="IN/Share" data-url="{{ url }}" ></script>
+{% endspaceless %}

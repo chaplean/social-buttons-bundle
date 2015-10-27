@@ -11,7 +11,7 @@ use Symfony\Component\Templating\EngineInterface;
  * @package   Chaplean\Bundle\SocialButtonsBundle\Helpers
  * @author    Valentin - Chaplean <valentin@chaplean.com>
  * @copyright 2014 - 2015 Chaplean (http://www.chaplean.com)
- * @since     0.1.0
+ * @since     1.0.0
  */
 class SocialBarHelper extends Helper
 {
@@ -32,7 +32,7 @@ class SocialBarHelper extends Helper
      */
     public function socialButtons($parameters)
     {
-        return $this->templating->render('ChapleanSocialButtonsBundle::social-buttons.html.twig', $parameters);
+        return $this->templating->render('ChapleanSocialButtonsBundle:SocialButtons:social-buttons.html.twig', $parameters);
     }
 
     /**
@@ -43,7 +43,7 @@ class SocialBarHelper extends Helper
      */
     private function socialButton($network, $parameters)
     {
-        return $this->templating->render('ChapleanSocialButtonsBundle::' . $network . '-button.html.twig', $parameters);
+        return $this->templating->render('ChapleanSocialButtonsBundle:SocialButtons:' . $network . '-button.html.twig', $parameters);
     }
 
     /**
@@ -103,7 +103,7 @@ class SocialBarHelper extends Helper
      */
     public function viadeoButton($parameters)
     {
-        return $this->templating->render('ChapleanSocialButtonsBundle::viadeo-button.html.twig', $parameters);
+        return $this->templating->render('ChapleanSocialButtonsBundle:SocialButtons:viadeo-button.html.twig', $parameters);
     }
 
     /**
@@ -111,6 +111,6 @@ class SocialBarHelper extends Helper
      */
     public function getName()
     {
-        return 'social-buttons';
+        return 'chaplean_social_buttons_helper';
     }
 }

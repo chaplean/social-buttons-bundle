@@ -1,5 +1,38 @@
+{% if (url is not defined or url == null) and app.request.uri is defined %}
+    {% set url = app.request.uri %}
+{% elseif url is empty %}
+    {% set url = '' %}
+{% endif %}
+
+{% set options = '' %}
+
+{% if title is defined %}
+    {% set options = options ~ '&description=' ~ title %}
+{% endif %}
+
 {% spaceless %}
 <a href="//fr.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" /></a>
 <!-- Please call pinit.js only once per page -->
 <script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+{#<a class="btn btn-social-icon btn-pinterest" onclick="pinterest()" >#}
+{#<img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" /></a>#}
+{#<i class="fa fa-pinterest"></i>#}
+{#<!-- Please call pinit.js only once per page -->#}
+{#<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>#}
+{#<script>#}
+{#function pinterest() {#}
+{#var param = encodeURI('{{ options }}');#}
+{#var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;#}
+{#var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;#}
+{#var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;#}
+{#var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;#}
+
+{#var h = 600;#}
+{#var w = 800;#}
+{#var left = ((width / 2) - (w / 2)) + dualScreenLeft;#}
+{#var top = ((height / 2) - (h / 2)) + dualScreenTop;#}
+
+{#window.open('http://pinterest.com/pin/create/bookmarklet/?url={{ url }}&is_video=false' + param,'sharer','toolbar=0,status=0,width=' + w + ',height=' + h + ',top=' + top + ',left=' + left);#}
+{#}#}
+{#</script>#}
 {% endspaceless %}

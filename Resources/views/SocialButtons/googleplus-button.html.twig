@@ -3,21 +3,26 @@
 {% elseif url is empty %}
     {% set url = '' %}
 {% endif %}
+{% set params = '?url=' ~ url %}
 
 {% spaceless %}
-    {#<a class="btn btn-social-icon btn-google">#}
-        {#<i class="fa fa-google-plus"></i>#}
-    {#</a>#}
- <div class="g-plusone" data-href="{{url}}"></div>
-
+<a href="javascript:void(0)" onclick="googleplus()" class="btn-share-googleplus">
+    <i class="fa fa-google-plus"></i>
+</a>
  <script type="text/javascript">
-   window.___gcfg = {lang: '{{locale}}'};
+function googleplus() {
+    var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+    var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+    var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+    var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
 
-   (function() {
-     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-     po.src = 'https://apis.google.com/js/plusone.js';
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-   })();
- </script>
+    var h = 600;
+    var w = 800;
+    var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+    var top = ((height / 2) - (h / 2)) + dualScreenTop;
+
+    window.open('https://plus.google.com/share{{ params }}','sharer','toolbar=0,status=0,width=' + w + ',height=' + h + ',top=' + top + ',left=' + left);
+}
+</script>
 
 {% endspaceless %}

@@ -1,0 +1,28 @@
+@import "../libs/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+@import "../libs/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
+@import "../libs/bootstrap-sass-official/assets/stylesheets/bootstrap/buttons";
+@import "../libs/bootstrap-social/bootstrap-social";
+
+.btn-share-twitter {
+    @extend .btn;
+    @extend .btn-social-icon;
+    @extend .btn-twitter;
+}
+
+.btn-share-facebook {
+    @extend .btn;
+    @extend .btn-social-icon;
+    @extend .btn-facebook;
+}
+
+.btn-share-googleplus {
+    @extend .btn;
+    @extend .btn-social-icon;
+    @extend .btn-google;
+}
+
+.btn-share-linkedin {
+    @extend .btn;
+    @extend .btn-social-icon;
+    @extend .btn-linkedin;
+}

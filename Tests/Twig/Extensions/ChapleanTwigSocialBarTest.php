@@ -64,7 +64,7 @@ class ChapleanTwigSocialBarTest extends LogicalTest
     {
         $template = $this->twigSocialBar->getFacebookLikeButton();
 
-        $this->assertContains('btn-facebook', $template);
+        $this->assertContains('btn-share-facebook', $template);
         $this->assertNotContains('http://test.com', $template);
     }
 
@@ -77,7 +77,7 @@ class ChapleanTwigSocialBarTest extends LogicalTest
             'url' => 'http://test.com'
         ));
 
-        $this->assertContains('btn-facebook', $template);
+        $this->assertContains('btn-share-facebook', $template);
         $this->assertContains('http://test.com', $template);
     }
 
@@ -88,7 +88,7 @@ class ChapleanTwigSocialBarTest extends LogicalTest
     {
         $template = $this->twigSocialBar->getTwitterButton();
 
-        $this->assertContains('btn-twitter', $template);
+        $this->assertContains('btn-share-twitter', $template);
         $this->assertNotContains('http://test.com', $template);
     }
 
@@ -101,7 +101,7 @@ class ChapleanTwigSocialBarTest extends LogicalTest
             'url' => 'http://test.com'
         ));
 
-        $this->assertContains('btn-twitter', $template);
+        $this->assertContains('btn-share-twitter', $template);
         $this->assertContains('http://test.com', $template);
     }
 
@@ -112,7 +112,7 @@ class ChapleanTwigSocialBarTest extends LogicalTest
     {
         $template = $this->twigSocialBar->getGoogleplusButton();
 
-        $this->assertContains('g-plusone', $template);
+        $this->assertContains('btn-share-googleplus', $template);
         $this->assertNotContains('http://test.com', $template);
     }
 
@@ -125,7 +125,7 @@ class ChapleanTwigSocialBarTest extends LogicalTest
             'url' => 'http://test.com'
         ));
 
-        $this->assertContains('g-plusone', $template);
+        $this->assertContains('btn-share-googleplus', $template);
         $this->assertContains('http://test.com', $template);
     }
 
@@ -136,7 +136,7 @@ class ChapleanTwigSocialBarTest extends LogicalTest
     {
         $template = $this->twigSocialBar->getLinkedinButton();
 
-        $this->assertContains('IN/Share', $template);
+        $this->assertContains('btn-share-linkedin', $template);
         $this->assertNotContains('http://test.com', $template);
     }
 
@@ -149,7 +149,7 @@ class ChapleanTwigSocialBarTest extends LogicalTest
             'url' => 'http://test.com'
         ));
 
-        $this->assertContains('IN/Share', $template);
+        $this->assertContains('btn-share-linkedin', $template);
         $this->assertContains('http://test.com', $template);
     }
 
@@ -171,7 +171,7 @@ class ChapleanTwigSocialBarTest extends LogicalTest
         $template = $this->twigSocialBar->getSocialButtons(array('facebook' => array(), 'twitter' => array()));
 
         $this->assertNotEmpty($template);
-        $this->assertContains('btn-facebook', $template);
-        $this->assertContains('btn-twitter', $template);
+        $this->assertContains('btn-share-facebook', $template);
+        $this->assertContains('btn-share-twitter', $template);
     }
 }

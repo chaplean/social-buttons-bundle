@@ -1,26 +1,40 @@
 @import "../libs/bootstrap-sass-official/assets/stylesheets/bootstrap/buttons";
 @import "../libs/bootstrap-social/bootstrap-social";
 
+.btn-share {
+    height: 20px;
+    width: 20px;
+
+    i {
+        font-size: 1em !important;
+        margin-top: -6px;
+    }
+}
+
 .btn-share-twitter {
     @extend .btn;
     @extend .btn-social-icon;
     @extend .btn-twitter;
+    @extend .btn-share;
 }
 
 .btn-share-facebook {
     @extend .btn;
     @extend .btn-social-icon;
     @extend .btn-facebook;
+    @extend .btn-share;
 }
 
 .btn-share-googleplus {
     @extend .btn;
     @extend .btn-social-icon;
     @extend .btn-google;
+    @extend .btn-share;
 }
 
 .btn-share-linkedin {
     @extend .btn;
     @extend .btn-social-icon;
     @extend .btn-linkedin;
+    @extend .btn-share;
 }

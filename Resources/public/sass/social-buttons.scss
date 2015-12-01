@@ -1,13 +1,15 @@
 @import "../libs/bootstrap-sass-official/assets/stylesheets/bootstrap/buttons";
+@import "../libs/font-awesome/scss/font-awesome";
 @import "../libs/bootstrap-social/bootstrap-social";
 
 .btn-share {
-    height: 20px;
-    width: 20px;
+    border-radius: 2px;
+    height: 25px;
+    width: 25px;
 
     i {
-        font-size: 1em !important;
-        margin-top: -6px;
+        font-size: 1.3em !important;
+        margin-top: -4px;
     }
 }
 
@@ -16,6 +18,11 @@
     @extend .btn-social-icon;
     @extend .btn-twitter;
     @extend .btn-share;
+
+    i {
+        @extend .fa;
+        @extend .fa-twitter;
+    }
 }
 
 .btn-share-facebook {
@@ -23,6 +30,12 @@
     @extend .btn-social-icon;
     @extend .btn-facebook;
     @extend .btn-share;
+
+    i {
+        @extend .fa;
+        @extend .fa-facebook;
+        margin-top: -3px;
+    }
 }
 
 .btn-share-googleplus {
@@ -30,6 +43,12 @@
     @extend .btn-social-icon;
     @extend .btn-google;
     @extend .btn-share;
+
+    i {
+        @extend .fa;
+        @extend .fa-google-plus;
+        margin-top: -3px;
+    }
 }
 
 .btn-share-linkedin {
@@ -37,4 +56,21 @@
     @extend .btn-social-icon;
     @extend .btn-linkedin;
     @extend .btn-share;
+
+    i {
+        @extend .fa;
+        @extend .fa-linkedin;
+    }
+}
+
+.btn-share-youtube {
+    @extend .btn;
+    @extend .btn-social-icon;
+    @extend .btn-google;
+    @extend .btn-share;
+
+    i {
+        @extend .fa;
+        @extend .fa-youtube;
+    }
 }

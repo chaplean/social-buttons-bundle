@@ -59,13 +59,13 @@ class ChapleanTwigSocialBar extends \Twig_Extension
     public function getFunctions()
     {
         return array(
-            'socialButtons'    => new \Twig_Function_Method($this, 'getSocialButtons', array('is_safe' => array('html'))),
-            'facebookButton'   => new \Twig_Function_Method($this, 'getFacebookLikeButton', array('is_safe' => array('html'))),
-            'twitterButton'    => new \Twig_Function_Method($this, 'getTwitterButton', array('is_safe' => array('html'))),
-            'googlePlusButton' => new \Twig_Function_Method($this, 'getGooglePlusButton', array('is_safe' => array('html'))),
-            'pinterestButton'  => new \Twig_Function_Method($this, 'getPinterestButton', array('is_safe' => array('html'))),
-            'viadeoButton'     => new \Twig_Function_Method($this, 'getViadeoButton', array('is_safe' => array('html'))),
-            'linkedInButton'   => new \Twig_Function_Method($this, 'getLinkedInButton', array('is_safe' => array('html'))),
+            new \Twig_SimpleFunction('socialButtons', array($this, 'getSocialButtons'), array('is_safe' => array('html'))),
+            new \Twig_SimpleFunction('facebookButton', array($this, 'getFacebookLikeButton'), array('is_safe' => array('html'))),
+            new \Twig_SimpleFunction('twitterButton', array($this, 'getTwitterButton'), array('is_safe' => array('html'))),
+            new \Twig_SimpleFunction('googlePlusButton', array($this, 'getGooglePlusButton'), array('is_safe' => array('html'))),
+            new \Twig_SimpleFunction('pinterestButton', array($this, 'getPinterestButton'), array('is_safe' => array('html'))),
+            new \Twig_SimpleFunction('viadeoButton', array($this, 'getViadeoButton'), array('is_safe' => array('html'))),
+            new \Twig_SimpleFunction('linkedInButton', array($this, 'getLinkedInButton'), array('is_safe' => array('html'))),
         );
     }
 

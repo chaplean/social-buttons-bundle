@@ -45,13 +45,13 @@ class ChapleanTwigSocialBarTest extends LogicalTest
         $this->assertInternalType('array', $functions);
         $this->assertEquals(
             array(
-                'socialButtons',
-                'facebookButton',
-                'twitterButton',
-                'googlePlusButton',
-                'pinterestButton',
-                'viadeoButton',
-                'linkedInButton',
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
             ),
             array_keys($functions)
         );

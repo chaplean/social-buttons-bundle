@@ -35,10 +35,11 @@
         "psr-4": {
             "Chaplean\\Bundle\\SocialButtonsBundle\\": ""
         },
-        "classmap": [ "app/AppKernel.php"]
+        "classmap": ["app/AppKernel.php"]
     },
     "config": {
         "bin-dir": "bin",
-        "discard-changes": true
+        "discard-changes": true,
+	"secure-http": false
     }
 }

@@ -2,10 +2,10 @@ imports:
     - { resource: parameters.yml }
 
 framework:
-    translator:      { fallback: "%locale%" }
-    secret:          "S€cR3t"
+    translator:      { fallback: '%locale%' }
+    secret:          'S€cR3t'
     router:
-        resource: "%kernel.root_dir%/config/routing.yml"
+        resource: '%kernel.root_dir%/config/routing.yml'
         strict_requirements: true
     form:            ~
     csrf_protection: ~
@@ -13,7 +13,7 @@ framework:
     templating:
         engines: ['twig']
         #assets_version: SomeVersionScheme
-    default_locale:  "%locale%"
+    default_locale:  '%locale%'
     trusted_hosts:   ~
     trusted_proxies: ~
     session:
@@ -26,29 +26,29 @@ framework:
 
 # Twig Configuration
 twig:
-    debug:            "%kernel.debug%"
-    strict_variables: "%kernel.debug%"
+    debug:            '%kernel.debug%'
+    strict_variables: '%kernel.debug%'
 
 # Assetic Configuration
 assetic:
-    debug:          "%use_assetic_debug%"
-    use_controller: "%use_assetic_controller%"
+    debug:          '%use_assetic_debug%'
+    use_controller: '%use_assetic_controller%'
     bundles:        ['ChapleanSocialButtonsBundle']
-    ruby: %ruby.bin%
+    ruby: '%ruby.bin%'
     filters:
         cssrewrite: ~
         sass:
-            bin: %sass.bin%
-            apply_to: "\.scss"
+            bin: '%sass.bin%'
+            apply_to: '\.scss'
         compass:
-            bin: %compass.bin%
+            bin: '%compass.bin%'
             no_line_comments: true
 
 monolog:
     handlers:
         main:
             type:   stream
-            path:   "%kernel.logs_dir%/%kernel.environment%.log"
+            path:   '%kernel.logs_dir%/%kernel.environment%.log'
             level:  info
         console:
             type:   console
@@ -59,7 +59,7 @@ monolog:
 doctrine:
     dbal:
         driver:   pdo_mysql
-        host:     127.0.0.1
+        host:     localhost
         port:     3306
         dbname:   test_database
         user:     root
@@ -70,29 +70,29 @@ doctrine:
             enum: string
 
     orm:
-        auto_generate_proxy_classes: "%kernel.debug%"
+        auto_generate_proxy_classes: '%kernel.debug%'
         auto_mapping: true
 
 chaplean_social_buttons:
     buttons:
         facebook:
             url:            null
-            locale:         "fr_FR"
+            locale:         'fr_FR'
             send:           false
             showFaces:      false
         twitter:
             url:            null
-            locale:         "fr"
-            message:        ""
-            text:           ""
+            locale:         'fr'
+            message:        ''
+            text:           ''
             via:            false
             tag:            false
             count:          none
         googleplus:
             url:            null
-            locale :        "fr"
+            locale :        'fr'
         linkedin:
             url:            null
-            locale:         "fr_FR"
+            locale:         'fr_FR'
         pinterest:
             url:            null

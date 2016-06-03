@@ -1,4 +1,4 @@
 chaplean_SocialButtons:
-    resource: "@ChapleanSocialButtonsBundle/Resources/config/routing.yml"
+    resource: '@ChapleanSocialButtonsBundle/Resources/config/routing.yml'
     prefix:   /
 

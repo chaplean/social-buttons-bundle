@@ -1,6 +1,6 @@
 <?php
 
-namespace Chaplean\Bundle\SocialButtonsBundle\Tests\Helpers;
+namespace Tests\Chaplean\Bundle\SocialButtonsBundle\Helpers;
 
 use Chaplean\Bundle\SocialButtonsBundle\Helpers\SocialBarHelper;
 use Chaplean\Bundle\UnitBundle\Test\LogicalTest;

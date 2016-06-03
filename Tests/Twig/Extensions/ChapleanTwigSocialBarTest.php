@@ -1,6 +1,6 @@
 <?php
 
-namespace Chaplean\Bundle\SocialButtonsBundle\Tests\Twig\Extensions;
+namespace Tests\Chaplean\Bundle\SocialButtonsBundle\Twig\Extensions;
 
 use Chaplean\Bundle\SocialButtonsBundle\Twig\Extensions\ChapleanTwigSocialBar;
 use Chaplean\Bundle\UnitBundle\Test\LogicalTest;

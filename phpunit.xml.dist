@@ -19,18 +19,29 @@
         </testsuite>
     </testsuites>
 
+    <filter>
+        <whitelist>
+            <directory>.</directory>
+
+            <exclude>
+                <directory>app</directory>
+                <directory>bin</directory>
+                <directory>DataFixtures</directory>
+                <directory>DependencyInjection</directory>
+                <directory>Resources</directory>
+                <directory>Tests</directory>
+                <directory>var</directory>
+                <directory>vendor</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <!-- Remove if you don't want coverage -->
+    <logging>
+        <log type="coverage-clover" target="build/logs/clover.xml" />
+    </logging>
+
     <php>
         <server name="KERNEL_DIR" value="app/" />
     </php>
-
-    <filter>
-        <whitelist>
-            <directory>Entity/</directory>
-            <directory>Helpers/</directory>
-            <directory>Resources/</directory>
-            <directory>Repository/</directory>
-            <directory>Twig/</directory>
-            <directory>Utility/</directory>
-        </whitelist>
-    </filter>
 </phpunit>

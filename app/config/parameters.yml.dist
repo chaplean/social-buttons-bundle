@@ -14,6 +14,8 @@ parameters:
     locale: fr
     secret: ThatsChapleanSocialButtonsBun2le
 
+    data_fixtures_namespace: false
+
     use_assetic_controller: false
 
     sass.bin: /usr/local/bin/sass

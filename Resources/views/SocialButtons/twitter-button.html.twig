@@ -5,11 +5,11 @@
 {% endif %}
 {% set params = '?url=' ~ url ~ '&text=' ~ message ~ '&lang=' ~ locale ~ '&count=' ~ count %}
 
-{% if via is not sameas(false) %}
+{% if via is not same as(false) %}
     {% set params = params ~ '&via=' ~ via %}
 {% endif %}
 
-{% if tag is not sameas(false) %}
+{% if tag is not same as(false) %}
     {% set params = params ~ '&hashtags=' ~ tag %}
 {% endif %}
 

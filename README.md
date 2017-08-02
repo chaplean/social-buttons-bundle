@@ -1,5 +1,5 @@
-Getting Started
-===============
+Getting Started With Chaplean Social Buttons Bundle
+===================================================
 
 ## Configuration: 
 

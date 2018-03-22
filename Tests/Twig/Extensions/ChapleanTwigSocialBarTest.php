@@ -3,7 +3,7 @@
 namespace Tests\Chaplean\Bundle\SocialButtonsBundle\Twig\Extensions;
 
 use Chaplean\Bundle\SocialButtonsBundle\Twig\Extensions\ChapleanTwigSocialBar;
-use Chaplean\Bundle\UnitBundle\Test\LogicalTest;
+use Chaplean\Bundle\UnitBundle\Test\FunctionalTestCase;
 
 /**
  * Class ChapleanTwigSocialBarTest.
@@ -13,7 +13,7 @@ use Chaplean\Bundle\UnitBundle\Test\LogicalTest;
  * @copyright 2014 - 2015 Chaplean (http://www.chaplean.coop)
  * @since     1.0.0
  */
-class ChapleanTwigSocialBarTest extends LogicalTest
+class ChapleanTwigSocialBarTest extends FunctionalTestCase
 {
     /**
      * @var ChapleanTwigSocialBar

@@ -1,4 +1,8 @@
 services:
+    _defaults:
+        autowire: true
+        public: true
+
     chaplean_social_buttons.social_bar_helper:
         class : Chaplean\Bundle\SocialButtonsBundle\Helpers\SocialBarHelper
         tags :

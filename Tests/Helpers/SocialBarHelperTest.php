@@ -3,7 +3,7 @@
 namespace Tests\Chaplean\Bundle\SocialButtonsBundle\Helpers;
 
 use Chaplean\Bundle\SocialButtonsBundle\Helpers\SocialBarHelper;
-use Chaplean\Bundle\UnitBundle\Test\LogicalTest;
+use Chaplean\Bundle\UnitBundle\Test\FunctionalTestCase;
 
 /**
  * Class SocialBarHelperTest.
@@ -13,7 +13,7 @@ use Chaplean\Bundle\UnitBundle\Test\LogicalTest;
  * @copyright 2014 - 2015 Chaplean (http://www.chaplean.coop)
  * @since     1.0.0
  */
-class SocialBarHelperTest extends LogicalTest
+class SocialBarHelperTest extends FunctionalTestCase
 {
     /**
      * @var SocialBarHelper

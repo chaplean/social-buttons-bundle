@@ -13,7 +13,10 @@
         "psr-4": {
             "Chaplean\\Bundle\\SocialButtonsBundle\\": "",
             "Tests\\": "Tests"
-        }
+        },
+        "classmap": [
+            "app/AppKernel.php"
+        ]
     },
     "repositories": [
         {
@@ -31,7 +34,7 @@
     },
     "require-dev": {
         "chaplean/coding-standard": "1.1.*",
-        "chaplean/unit-bundle": "dev-feature/symfony3.4",
+        "chaplean/unit-bundle": "^7.0",
         "mockery/mockery": "dev-master",
         "symfony/phpunit-bridge": "^4.0"
     },

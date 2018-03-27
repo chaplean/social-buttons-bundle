@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4fedafb657f2e2f6ae7132a015de685",
+    "content-hash": "bcefe65e0efbc4b81e94aa6a23179051",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -2077,11 +2077,11 @@
         },
         {
             "name": "chaplean/unit-bundle",
-            "version": "dev-feature/symfony3.4",
+            "version": "v7.2.0",
             "source": {
                 "type": "git",
                 "url": "git@git.chaplean.coop:private/bundle/unit-bundle.git",
-                "reference": "16b04a6606b83a05902ff21121b0ce4d26408cde"
+                "reference": "9d133f5df8462e09de4b5166758ff00f327163f5"
             },
             "require": {
                 "doctrine/doctrine-bundle": "^1.6",
@@ -2093,11 +2093,10 @@
                 "php": ">=7.0.8",
                 "php-mock/php-mock": "^2.0",
                 "phpunit/phpunit": "^7.0",
-                "symfony/config": "^2.8 || ^3.0 || ^4.0",
-                "symfony/console": "^2.8 || ^3.0 || ^4.0",
-                "symfony/dependency-injection": "^2.7|^3.0|^4.0",
-                "symfony/security-bundle": "^2.8 || ^3.0 || ^4.0",
-                "symfony/yaml": "^2.8 || ^3.0 || ^4.0"
+                "symfony/config": "^3.0 || ^4.0",
+                "symfony/dependency-injection": "^3.0|^4.0",
+                "symfony/security-bundle": "^3.0 || ^4.0",
+                "symfony/yaml": "^3.0 || ^4.0"
             },
             "require-dev": {
                 "chaplean/codeship-scripts": "^1.0",
@@ -2106,15 +2105,15 @@
                 "friendsofsymfony/rest-bundle": "^2.0",
                 "jms/serializer-bundle": "^1.1 || ^2.0",
                 "sensio/distribution-bundle": "^4.0 || ^5.0",
-                "sensio/framework-extra-bundle": "^2.8 || ^3.0 || ^4.0 || ^5.0",
-                "symfony/console": "^2.8 || ^3.0 || ^4.0",
-                "symfony/form": "^2.8 || ^3.0 || ^4.0",
-                "symfony/http-kernel": "^2.8 || ^3.0 || ^4.0",
-                "symfony/monolog-bundle": "^2.8 || ^3.0 || ^4.0",
+                "sensio/framework-extra-bundle": "^4.0 || ^5.0",
+                "symfony/console": "^3.0 || ^4.0",
+                "symfony/form": "^3.0 || ^4.0",
+                "symfony/http-kernel": "^3.0 || ^4.0",
+                "symfony/monolog-bundle": "^3.0 || ^4.0",
                 "symfony/phpunit-bridge": "^4.0",
-                "symfony/translation": "^2.8 || ^3.0 || ^4.0",
-                "symfony/validator": "^2.8 || ^3.0 || ^4.0",
-                "symfony/var-dumper": "^2.8 || ^3.0 || ^4.0"
+                "symfony/translation": "^3.0 || ^4.0",
+                "symfony/validator": "^3.0 || ^4.0",
+                "symfony/var-dumper": "^3.0 || ^4.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -2160,7 +2159,7 @@
                 }
             ],
             "description": "Contains utilities for functional and unit tests",
-            "time": "2018-03-22T12:21:50+00:00"
+            "time": "2018-03-26T15:02:07+00:00"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -3255,16 +3254,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.0.2",
+            "version": "7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "e2f8aa21bc54b6ba218bdd4f9e0dac1e9bc3b4e9"
+                "reference": "536f4d853c12d8189963435088e8ff7c0daeab2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e2f8aa21bc54b6ba218bdd4f9e0dac1e9bc3b4e9",
-                "reference": "e2f8aa21bc54b6ba218bdd4f9e0dac1e9bc3b4e9",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/536f4d853c12d8189963435088e8ff7c0daeab2e",
+                "reference": "536f4d853c12d8189963435088e8ff7c0daeab2e",
                 "shasum": ""
             },
             "require": {
@@ -3278,7 +3277,7 @@
                 "phar-io/version": "^1.0",
                 "php": "^7.1",
                 "phpspec/prophecy": "^1.7",
-                "phpunit/php-code-coverage": "^6.0",
+                "phpunit/php-code-coverage": "^6.0.1",
                 "phpunit/php-file-iterator": "^1.4.3",
                 "phpunit/php-text-template": "^1.2.1",
                 "phpunit/php-timer": "^2.0",
@@ -3331,7 +3330,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-02-26T07:03:12+00:00"
+            "time": "2018-03-26T07:36:48+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -4112,7 +4111,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "chaplean/unit-bundle": 20,
         "mockery/mockery": 20
     },
     "prefer-stable": false,

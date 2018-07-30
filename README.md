@@ -17,6 +17,9 @@ chaplean_social_buttons:
             text:           "Tweet"
             via:            "Chaplean"
             tag:            "Chap"
+            # Optional
+			class_a:        "some-class"
+			class_i:        "some-class"
         googleplus:
             url:            null
             locale :        "fr"

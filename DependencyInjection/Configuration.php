@@ -57,6 +57,8 @@ class Configuration implements ConfigurationInterface
             ->scalarNode('via')->end()
             ->scalarNode('tag')->end()
             ->scalarNode('count')->end()
+            ->scalarNode('class_a')->defaultValue('btn-share-twitter')->end()
+            ->scalarNode('class_i')->defaultValue('fa fa-twitter')->end()
             // G+ specific
             // Linkedin specific
             ->end()

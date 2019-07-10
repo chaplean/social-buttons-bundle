@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bcefe65e0efbc4b81e94aa6a23179051",
+    "content-hash": "2b77f5d3da456ccdde4775665ae81ec8",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -770,12 +770,12 @@
             "version": "v2.6.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/doctrine2.git",
+                "url": "https://github.com/doctrine/orm.git",
                 "reference": "87ee409783a4a322b5597ebaae558661404055a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/87ee409783a4a322b5597ebaae558661404055a7",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/87ee409783a4a322b5597ebaae558661404055a7",
                 "reference": "87ee409783a4a322b5597ebaae558661404055a7",
                 "shasum": ""
             },
@@ -1480,6 +1480,7 @@
                 "compression",
                 "minification"
             ],
+            "abandoned": "symfony/webpack-encore-pack",
             "time": "2017-07-14T07:26:46+00:00"
         },
         {
@@ -2077,18 +2078,24 @@
         },
         {
             "name": "chaplean/unit-bundle",
-            "version": "v7.2.0",
+            "version": "7.3.0",
             "source": {
                 "type": "git",
-                "url": "git@git.chaplean.coop:private/bundle/unit-bundle.git",
-                "reference": "9d133f5df8462e09de4b5166758ff00f327163f5"
+                "url": "https://github.com/chaplean/unit-bundle.git",
+                "reference": "c805f171039544e1668c07c291c50814e5990421"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chaplean/unit-bundle/zipball/c805f171039544e1668c07c291c50814e5990421",
+                "reference": "c805f171039544e1668c07c291c50814e5990421",
+                "shasum": ""
             },
             "require": {
                 "doctrine/doctrine-bundle": "^1.6",
                 "doctrine/doctrine-fixtures-bundle": "^3.0",
                 "doctrine/orm": "^2.5",
-                "liip/functional-test-bundle": "^1.8",
-                "mockery/mockery": "dev-master",
+                "liip/functional-test-bundle": "^1.9",
+                "mockery/mockery": "^1.0",
                 "nelmio/alice": "^2.0",
                 "php": ">=7.0.8",
                 "php-mock/php-mock": "^2.0",
@@ -2099,9 +2106,8 @@
                 "symfony/yaml": "^3.0 || ^4.0"
             },
             "require-dev": {
-                "chaplean/codeship-scripts": "^1.0",
                 "chaplean/coding-standard": "^1.1",
-                "chaplean/mailer-bundle": "^4.0",
+                "chaplean/mailer-bundle": "^4.0 || ^5.0",
                 "friendsofsymfony/rest-bundle": "^2.0",
                 "jms/serializer-bundle": "^1.1 || ^2.0",
                 "sensio/distribution-bundle": "^4.0 || ^5.0",
@@ -2125,41 +2131,23 @@
             },
             "autoload": {
                 "psr-4": {
+                    "App\\": "",
                     "Chaplean\\Bundle\\UnitBundle\\": "",
                     "Foo\\Bundle\\FooBundle\\": ""
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\": "Tests"
-                },
-                "classmap": [
-                    "app/AppKernel.php"
-                ]
-            },
-            "scripts": {
-                "post-install-cmd": [
-                    "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-                    "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-                    "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
-                ],
-                "post-update-cmd": [
-                    "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-                    "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-                    "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
                     "name": "Chaplean",
-                    "homepage": "http://www.chaplean.coop"
+                    "homepage": "https://www.chaplean.coop"
                 }
             ],
             "description": "Contains utilities for functional and unit tests",
-            "time": "2018-03-26T15:02:07+00:00"
+            "time": "2018-09-25T10:11:22+00:00"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -2461,12 +2449,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "e4c958124bc28709f20d8a3fdafdeb83b482c86c"
+                "reference": "d0e6b4d3d8deba978e4c5fa0846562ed416325cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/e4c958124bc28709f20d8a3fdafdeb83b482c86c",
-                "reference": "e4c958124bc28709f20d8a3fdafdeb83b482c86c",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/d0e6b4d3d8deba978e4c5fa0846562ed416325cf",
+                "reference": "d0e6b4d3d8deba978e4c5fa0846562ed416325cf",
                 "shasum": ""
             },
             "require": {
@@ -2475,8 +2463,7 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "phpdocumentor/phpdocumentor": "^2.9",
-                "phpunit/phpunit": "~5.7.10|~6.5"
+                "phpunit/phpunit": "~5.7.10|~6.5|~7.0|~8.0"
             },
             "type": "library",
             "extra": {
@@ -2519,7 +2506,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2018-03-07T06:00:02+00:00"
+            "time": "2019-05-13T15:41:06+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -2612,7 +2599,7 @@
                     "email": "shelburt02@gmail.com"
                 },
                 {
-                    "name": "Théo FIDRY",
+                    "name": "Théo Fidry",
                     "email": "theo.fidry@gmail.com"
                 }
             ],
@@ -3386,6 +3373,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2018-02-15T05:27:38+00:00"
         },
         {
